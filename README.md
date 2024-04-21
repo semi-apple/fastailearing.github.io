@@ -1,3 +1,3 @@
 # Welcom to My Bolg
 ## Posts
-[Feedbacks about FastAI](post/20-04-2024-reflection_about_fastai.html)
+[Feedbacks about FastAI](post/20_04_2024_reflection_about_fastai.md)
