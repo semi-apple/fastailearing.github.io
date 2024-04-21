@@ -57,10 +57,8 @@ Since the course22 file needed to run in a Docker environment, we first had to s
 
 During the environment setup process, we needed to update our GPU, but often I would see the WDDM (Windows Display Driver Model) label, indicating that the GPU was not accessible, and the version of GPU driver in Windows is different with the version in WSL.
 
-> Terminal in WSL
 ![Terminal in WSL](../pictures/GPU-output-in-wsl.png)
 
-> Terminal in Windows 
 ![Terminal in Windows](../pictures/GPU-output-in-Windows.png)
 
 Here we have two different versions of GPU. In Windows, the version is NVIDIA-SMI 536.19, yet in WSL is NVIDIA-SMI 535.54.02. I notice that the GPU driver in Ubuntu 22.04 may be different with the GPU driver in Windows, even though I am so sure that I have installed only one version's GPU driver. The driver which has a low version cannot run on Windows, but can run on Ubuntu. The driver which has a high version can run on Windows, yet not on Ubuntu.
@@ -71,12 +69,10 @@ On this assignment, Ubuntu 22.04 only support the GPU driver version lower that 
 
 After fixing GPU issue, I started to run the code. The situation was good at the beginning, but suddenly my computer became very slow. It turns out that my C driver was filled, and there is no space for this project.
 
-> Angry C disk
 ![Angry C disk](../pictures/red-C.png)
 
 I asked this problem on ED for some help, and Prof. Lovell said I can change 'Image path' in Docker.
 
-> Set image path in Docker
 ![Set image path in Docker](../pictures/set-image-path.png)
 
 After setting the path, the issued was solved, but there are other problems that bother me, so I have to use the laboratory computer with a remote connection. It turns out that the computer in the laboratory is still very reliable.
@@ -87,7 +83,6 @@ After finishing all of the problems related to this project, I was trying to exp
 
 Finally, it suddenly occurred to me that since the code is running in Docker, maybe the file is also can be found in docker. Following this thought, I browsed the folder in image and found the file I want.
 
-> Files in Docker
 ![Files in Docker](../pictures/Files-in-docker.png)
 
 The above is my impression of learning FastAI; it is an excellent course. Most of the content in the course, such as Docker, Linux command line, and WSL, comprises what I am eager to learn. These technologies will not only enhance my competitiveness but also allow me to be exposed to more cutting-edge related technologies and broaden my horizons.
